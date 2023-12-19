@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { pageWrapper } from "./css/styles";
 
 function App() {
+  const cardColor =
+    "bg-whatevercolornameIWant w-[350px] p-4 rounded-md text-white shadow-md";
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={pageWrapper}>
+      <div className={cardColor}>
+        <div className="text-2xl font-bold mb-85">Ryan Pags</div>
+        <div className="opacity-50">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. At optio
+          nobis, illum quasi consectetur, laudantium sunt dicta ad magni
+          reiciendis ex sapiente exercitationem, nostrum eaque dolore iste
+          doloremque praesentium maxime!
+        </div>
+      </div>
     </div>
   );
 }
